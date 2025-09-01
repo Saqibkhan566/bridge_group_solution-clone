@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './FeaturesSection.css';
 
 const features = [
@@ -11,50 +12,40 @@ const features = [
 const FeaturesSection = () => (
     <section className="features-section py-5">
         <div className="container-fluid">
-            <h2 className="features-title fw-bold mb-4">Our Main Features</h2>
+            <h2 className="features-title fw-bold mb-4" style={{ color: '#00076A', fontSize: '2.5rem', marginLeft: '0.5rem' }}>Our Main Features</h2>
             <div className="row g-4 align-items-stretch">
-                {features.map((feature, idx) => (
-                    <div className="col-md-3 d-flex" key={idx}>
-                        <div className="feature-card card flex-fill border-primary animate__animated animate__fadeInUp">
-                            <div className="card-body">
-                                <div className="feature-icon mb-3">
-                                    <i className={`${feature.icon}`} style={{ color: feature.color, fontSize: '2.2rem' }}></i>
+                <div className="col-lg-8">
+                    <div className="row g-4">
+                        {features.map((feature, idx) => (
+                            <div className="col-md-6 d-flex" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200" key={idx}>
+                                <div className="feature-card card flex-fill border-primary animate__animated animate__fadeInUp" style={{ borderColor: '#0033cc', borderWidth: '2px' }}>
+                                    <div className="card-body">
+                                        <div className="feature-icon mb-3">
+                                            <i className={`${feature.icon}`} style={{ color: feature.color, fontSize: '2.2rem' }}></i>
+                                        </div>
+                                        <h5 className="card-title fw-bold text-primary mb-2">{feature.title}</h5>
+                                        <p className="card-text text-secondary">{feature.desc}</p>
+                                    </div>
                                 </div>
-                                <h5 className="card-title fw-bold text-primary mb-2">{feature.title}</h5>
-                                <p className="card-text text-secondary">{feature.desc}</p>
                             </div>
-                        </div>
+                        ))}
                     </div>
-                ))}
-                <div className="col-md-6 d-flex align-items-center justify-content-center">
-                    <div className="feature-image animate__animated animate__fadeInRight">
-                        <img src="/assets/Shared workspace-amico 1.png" alt="Team Collaboration" className="img-fluid rounded-4 shadow-lg" style={{ maxWidth: '90%', minWidth: '320px' }} />
+                </div>
+                {/* Right: Orange bordered card with image and text */}
+                <div className="col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <div className="card flex-fill border-warning animate__animated animate__fadeInRight" style={{ borderColor: '#ff8300', borderWidth: '2px', background: '#fff', borderRadius: '1.2rem', boxShadow: '0 2px 8px rgba(255,131,0,0.08)' }}>
+                        <div className="feature-image text-center p-4">
+                            <img src="https://cdn.pixabay.com/photo/2021/08/23/07/41/teamwork-6566984_1280.jpg" alt="Team Collaboration" className="img-fluid rounded-4 shadow-lg mb-3" style={{ maxWidth: '90%', minWidth: '320px' }} />
+                            <h5 className="fw-bold mb-2" style={{ color: '#0033cc' }}>Be a part of success story we're building</h5>
+                            <p className="text-secondary mb-0" style={{ fontSize: '1.05rem' }}>
+                                We're growing fast and looking for driven people—whether you're a pro or just starting out, there's a place for you to make an impact. “Join us. Build your future.” We believe in nurturing talent and empowering individuals to lead with creativity and confidence.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 );
-
-// const FeaturesSection = () => (
-//     <section className="features-section py-5 bg-light">
-//         <div className="container-fluid">
-//             <h2 className="text-center mb-5 fw-bold">Our Main Features</h2>
-//             <div className="row">
-//                 {features.map((feature, idx) => (
-//                     <div className="col-md-4 mb-4" key={idx}>
-//                         <div className="card h-100 shadow feature-card">
-//                             <div className="card-body text-center">
-//                                 <div className="feature-icon mb-3">{feature.icon}</div>
-//                                 <h5 className="card-title fw-bold mb-2">{feature.title}</h5>
-//                                 <p className="card-text">{feature.desc}</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     </section>
-// );
 
 export default FeaturesSection;

@@ -13,22 +13,24 @@ const services = [
 const ServicesSection = () => (
     <section className="services-section py-5">
         <div className="container-fluid">
-            <h2 className="services-title fw-bold mb-4">Our Best Services</h2>
-            <div className="services-desc mb-4">Driving Real Business Impact Through Technology and Innovation. At Bridge Group Solution, we build solutions that solve real problems, boost efficiency, and fuel growth—whether you're a startup or an established enterprise.</div>
-            <div className="row g-4">
-                {services.map((service, idx) => (
-                    <div className="col-md-4 d-flex" key={idx}>
-                        <div className="service-card card flex-fill border-info animate__animated animate__fadeInUp">
-                            <div className="card-body">
-                                <div className="service-icon mb-3">
-                                    <i className={`${service.icon}`} style={{ color: service.color, fontSize: '2.2rem' }}></i>
+            <div className="section-content">
+                <h2 className="services-title fw-bold mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">Our Best Services</h2>
+                <div className="services-desc mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">Driving Real Business Impact Through Technology and Innovation. At Bridge Group Solution, we build solutions that solve real problems, boost efficiency, and fuel growthwhether you're a startup or an established enterprise.</div>
+                <div className="row g-4">
+                    {services.map((service, idx) => (
+                        <div className="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" key={idx}>
+                            <div className="service-card card flex-fill border-info animate__animated animate__fadeInUp">
+                                <div className="card-body">
+                                    <div className="service-icon mb-3">
+                                        <i className={`${service.icon}`} style={{ color: service.color, fontSize: '2.2rem' }}></i>
+                                    </div>
+                                    <h5 className="card-title fw-bold text-info mb-2">{service.title}</h5>
+                                    <p className="card-text text-secondary">{service.desc}</p>
                                 </div>
-                                <h5 className="card-title fw-bold text-info mb-2">{service.title}</h5>
-                                <p className="card-text text-secondary">{service.desc}</p>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     </section>

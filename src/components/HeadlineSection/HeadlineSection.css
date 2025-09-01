@@ -1,0 +1,18 @@
+/* HeadlineSection styles for Bridge Group Solutions clone */
+.headline-section {
+  background: #D6F0FF;
+  padding: 3rem 0;
+  width: 100%;
+}
+.headline-section h2 {
+  color: #00076A;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .headline-section h2 {
+    font-size: 1.6rem;
+  }
+}

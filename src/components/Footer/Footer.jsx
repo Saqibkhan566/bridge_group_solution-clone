@@ -1,13 +1,14 @@
 import React from 'react';
+import logo from '../../assets/logo.png';
 import './Footer.css';
 
 const Footer = () => (
     <footer className="footer bg-light text-dark pt-5 pb-3">
-        <div className="container-fluid">
+        <div className="container-fluid section-content" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
             <div className="row">
                 <div className="col-md-4 mb-4">
                     <div className="d-flex align-items-center mb-2">
-                        <img src="/assets/logo.png" alt="Bridge Group Logo" className="footer-logo me-2" />
+                        <img src={logo} alt="Bridge Group Logo" className="footer-logo me-2" />
                         <div>
                             <span className="footer-title text-primary fw-bold">BRIDGE GROUP</span><br />
                             <span className="footer-subtitle text-info">SOLUTIONS</span>

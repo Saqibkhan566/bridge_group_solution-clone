@@ -1,11 +1,13 @@
 import React from 'react';
+import logo from '../../assets/logo.png';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Navbar.css';
 
 const Navbar = () => (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2" data-aos="fade-down">
         <div className="container-fluid align-items-center">
             <a className="navbar-brand d-flex align-items-center gap-2" href="/">
-                <img src="/assets/logo.png" alt="Bridge Group Logo" className="navbar-logo" />
+                <img src={logo} alt="Bridge Group Logo" className="navbar-logo" />
                 <span className="navbar-title text-primary fw-bold">BRIDGE GROUP <span className="navbar-subtitle">SOLUTIONS</span></span>
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

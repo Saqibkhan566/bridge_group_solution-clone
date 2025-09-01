@@ -13,7 +13,7 @@ const services = [
 const HeroSection = () => (
     <section className="hero-section py-5">
         <div className="container-fluid">
-            <div className="row align-items-center">
+            <div className="row align-items-center section-content" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                 <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
                     <div className="hero-left animate__animated animate__fadeInLeft">
                         <div className="hero-accent mb-2"><span style={{ color: '#ff8300', fontWeight: 'bold' }}>WE KNOT SPACE...</span></div>
@@ -37,7 +37,7 @@ const HeroSection = () => (
                 </div>
                 <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
                     <div className="hero-image animate__animated animate__fadeInRight">
-                        <img src="/assets/erp.jpg" alt="ERP & Customize Software" className="img-fluid rounded-4 shadow-lg mb-3" style={{ maxWidth: '90%', minWidth: '320px' }} />
+                        <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="ERP & Customize Software" className="img-fluid rounded-4 shadow-lg mb-3" style={{ maxWidth: '90%', minWidth: '320px' }} />
                         <div className="bg-light rounded-4 p-4 shadow-sm mt-n3 hero-erp-desc">
                             <h3 className="fw-bold mb-2">ERP & Customize Software</h3>
                             <p className="mb-2">ERP is a type of software that helps organizations manage their core business processes—such as finance, HR, manufacturing, supply chain, services, procurement.</p>

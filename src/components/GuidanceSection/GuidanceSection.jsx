@@ -11,9 +11,9 @@ const stats = [
 const GuidanceSection = () => (
     <section className="guidance-section py-5">
         <div className="container-fluid">
-            <div className="row align-items-center">
+            <div className="row align-items-center section-content" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                 <div className="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
-                    <img src="/assets/Marriage counseling-bro 1.png" alt="Guidance" className="img-fluid rounded-4 shadow-lg guidance-img" style={{ maxWidth: '90%', minWidth: '320px' }} />
+                    <img src="https://cdn.pixabay.com/photo/2018/03/21/07/16/learning-3245793_1280.jpg" alt="Guidance" className="img-fluid rounded-4 shadow-lg guidance-img" style={{ maxWidth: '90%', minWidth: '320px' }} />
                 </div>
                 <div className="col-lg-6">
                     <h2 className="guidance-title fw-bold mb-3">You Always Get the Best Guidance</h2>

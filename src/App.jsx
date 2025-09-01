@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import HeroSection from './components/HeroSection/HeroSection';
 import FeaturesSection from './components/FeaturesSection/FeaturesSection';
 import ServicesSection from './components/ServicesSection/ServicesSection';
+import HeadlineSection from './components/HeadlineSection/HeadlineSection';
 import AwardsSection from './components/AwardsSection/AwardsSection';
 import GuidanceSection from './components/GuidanceSection/GuidanceSection';
 import PartnersSection from './components/PartnersSection/PartnersSection';
@@ -16,10 +17,11 @@ function App() {
       <HeaderBar />
       <Navbar />
       <HeroSection />
+      <HeadlineSection />
       <FeaturesSection />
-      <ServicesSection />
       <AwardsSection />
       <GuidanceSection />
+      <ServicesSection />
       <PartnersSection />
       <Footer />
     </>

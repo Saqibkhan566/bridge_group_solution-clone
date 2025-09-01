@@ -35,6 +35,7 @@
   color: #009fe3;
   text-decoration: none;
   transition: color 0.2s;
+  word-wrap: break-word;
 }
 .footer-link:hover {
   color: #ff8300;
