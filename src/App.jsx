@@ -21,8 +21,8 @@ function App() {
       <FeaturesSection />
       <AwardsSection />
       <GuidanceSection />
-      <ServicesSection />
       <PartnersSection />
+      <ServicesSection />
       <Footer />
     </>
   );
