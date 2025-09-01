@@ -1,0 +1,24 @@
+/* HeaderBar styles for Bridge Group Solutions clone */
+.header-bar {
+  background: #009fe3;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  letter-spacing: 0.5px;
+  z-index: 1001;
+}
+.header-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+.header-social {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transition: color 0.2s;
+}
+.header-social:hover {
+  color: #ff8300;
+}

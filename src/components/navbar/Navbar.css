@@ -1,0 +1,57 @@
+/* Navbar styles for Bridge Group Solutions clone */
+
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #fff !important;
+}
+
+.navbar-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
+
+.navbar-title {
+  font-size: 1.6rem;
+  color: #0033cc !important;
+  letter-spacing: 1px;
+}
+.navbar-subtitle {
+  font-size: 1.1rem;
+  color: #009fe3;
+  font-weight: 600;
+  margin-left: 0.2rem;
+}
+
+.nav-link {
+  color: #222 !important;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+.nav-link:hover, .dropdown-item:hover {
+  color: #ff8300 !important;
+}
+
+.dropdown-menu {
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  min-width: 200px;
+}
+
+.btn-warning {
+  background: #ff8300;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255,131,0,0.12);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.btn-warning:hover {
+  background: #e76b00;
+  box-shadow: 0 4px 16px rgba(255,131,0,0.18);
+  transform: scale(1.05);
+}

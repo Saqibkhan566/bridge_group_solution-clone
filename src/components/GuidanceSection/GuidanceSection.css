@@ -1,0 +1,46 @@
+/* GuidanceSection styles for Bridge Group Solutions clone */
+.guidance-section {
+  background: #e6f4fb;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.guidance-title {
+  color: #0033cc;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.guidance-img {
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  animation: fadeIn 1s;
+}
+.guidance-stat {
+  color: #0033cc;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: fadeInUp 1.2s;
+}
+.guidance-label {
+  color: #666;
+  font-size: 1.1rem;
+}
+.guidance-btn {
+  background: #009fe3;
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,159,227,0.12);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.guidance-btn:hover {
+  background: #007bb5;
+  box-shadow: 0 4px 16px rgba(0,159,227,0.18);
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

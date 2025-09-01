@@ -1,0 +1,31 @@
+/* PartnersSection styles for Bridge Group Solutions clone */
+
+.partners-section {
+  background: #f4faff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.partners-title {
+  color: #009fe3;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+}
+.partners-headline {
+  color: #0033cc;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.partners-desc {
+  color: #666;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.partner-logo {
+  max-width: 120px;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+  transition: transform 0.3s;
+}
+.partner-logo:hover {
+  transform: scale(1.12);
+}

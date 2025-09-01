@@ -1,0 +1,37 @@
+/* FeaturesSection styles for Bridge Group Solutions clone */
+
+.features-section {
+  background: #f4faff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.features-title {
+  color: #0033cc;
+  font-size: 2.2rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+.feature-card {
+  border-radius: 1.2rem;
+  border: 2px solid #0033cc;
+  box-shadow: 0 2px 8px rgba(0,51,204,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background: #fff;
+}
+.feature-card:hover {
+  box-shadow: 0 8px 32px rgba(0,51,204,0.18);
+  transform: scale(1.04);
+}
+.feature-icon {
+  font-size: 2.2rem;
+  color: #0033cc;
+}
+.feature-image img {
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
